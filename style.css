@@ -1,0 +1,97 @@
+/* Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+
+/* Calc Container  */
+.container {
+    width: 60%;
+    height: 650px;
+    background-color: grey;
+    margin: 5rem auto;
+}
+.calculator {
+    width: 320px;
+    height: 580px;
+    position: relative;
+    background-color: white;
+    margin: 0 auto;
+    top: 20px;
+    border-radius: 8px;
+}
+
+
+/* Result */
+#result {
+    height: 150px;
+    
+}
+#history {
+    height: 30px;
+    text-align: right;
+    margin: 0 30px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #919191;
+}
+#output {
+    height: 80px;
+    text-align: right;
+    margin: 15px 30px;
+    font-size: 45px;
+    padding-top: 20px;
+    text-overflow: ellipsis;
+    white-space: no-wrap;
+    overflow: hidden;
+}
+
+/* Keyboard */
+#keyboard {
+    margin-top: 20px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.operator, .number {
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.operator {
+    background-color: #eaedef;
+}
+button:nth-child(12) {
+    background-color: orange;
+}
+button:nth-child(16) {
+    background-color: pink;
+}button:nth-child(20) {
+    background-color: rgb(164, 38, 38);
+}
+button:nth-child(24) {
+    background-color: goldenrod;
+}
+button:nth-child(28) {
+    background-color: green;
+}
+.operator, .number {
+    cursor: pointer;
+}
+.operator:active, .number:active {
+    font-size: 11px;
+}
+
+.is-active {
+    background-color: grey;
+}

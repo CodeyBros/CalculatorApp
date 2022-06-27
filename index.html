@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Calculator App</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(max-width: 600px)" href="phone.css">
+</head>
+
+<body>
+    <!-- Calculator Container -->
+    <div class="container">
+        <div class="calculator">
+            <div id="result">
+                <div id="history">
+                    <p id="history-value">0</p>
+                </div>
+                <div id="output">
+                    <p id="output-value">0</p>
+                </div>
+            </div>
+            <div id="keyboard">
+                <button class="operator" data-type="operator" data-action="sqrt">&#8730</button>
+                <button class="operator" data-type="operator" data-action="cos">cos</button>
+                <button class="operator" data-type="operator" data-action="sin">sin</button>
+                <button class="operator" data-type="operator" data-action="tan">tan</button>
+                <button class="operator" data-type="operator" data-action="sqr">x<sup>2</sup></button>
+                <button class="operator" data-type="operator" data-action="log">log</button>
+                <button class="operator" data-type="operator" data-action="percent">&#37</button>
+                <button class="operator" data-type="operator" data-action="divide">&#247</button>
+                <button class="number" data-type="number">7</button>
+                <button class="number" data-type="number">8</button>
+                <button class="number" data-type="number">9</button>
+                <button class="operator" data-type="operator" data-action="multiply">&#215</button>
+                <button class="number" data-type="number">4</button>
+                <button class="number" data-type="number">5</button>
+                <button class="number" data-type="number">6</button>
+                <button class="operator" data-type="operator" data-action="subtract">-</button>
+                <button class="number" data-type="number">1</button>
+                <button class="number" data-type="number">2</button>
+                <button class="number" data-type="number">3</button>
+                <button class="operator" data-type="operator" data-action="add">+</button>
+                <button class="operator" data-type="number" data-action="decimal">.</button>
+                <button class="number" data-type="number">0</button>
+                <button class="operator" data-action="clear">AC</button>
+                <button class="operator" data-action="calculate">=</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
